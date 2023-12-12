@@ -41,6 +41,7 @@
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
   justify-content: center;
   gap: 10px;
 }
@@ -64,7 +65,8 @@
 
 .keypads button:last-child {
   background-color: rgba(255, 153, 0, 0.5);
-  grid-column: span 4;
+  width: 100%;
+  grid-column: 1 / -1;
 }
 .keypads button:last-child:hover {
   background-color: rgba(255, 153, 0, 0.2);
